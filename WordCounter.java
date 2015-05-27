@@ -48,9 +48,9 @@ public class WordCounter extends Configured implements Tool {
             System.err.println("INPUT ERROR! ");
             return -1;
         }
-		String word1 = new String(args[2]);
-		String word2 = new String(args[3]);
-		String word3 = new String(args[4]);
+	public static	String word1 = new String(args[2]);
+	public static	String word2 = new String(args[3]);
+	public static	String word3 = new String(args[4]);
         Job job = new Job(getConf());
         job.setJarByClass(WordCounter.class);
         job.setJobName("wiki");
